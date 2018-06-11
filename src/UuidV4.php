@@ -16,12 +16,12 @@ use function vsprintf;
 /**
  * Implementation of the RFC 4122 UUID version 4 (variant 1) data type
  */
-final class UuidV4
+class UuidV4
 {
     public const PATTERN = '#^[0-9A-F]{8}-[0-9A-F]{4}-4[0-9A-F]{3}-[89AB][0-9A-F]{3}-[0-9A-F]{12}$#i';
 
     /** @var string */
-    private $value;
+    protected $value;
 
     public function __construct(string $value)
     {
