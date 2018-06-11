@@ -1,5 +1,9 @@
 # UUID version 4
 
+[![Build Status](https://travis-ci.org/pwm/uuid-v4.svg?branch=master)](https://travis-ci.org/pwm/uuid-v4)
+[![codecov](https://codecov.io/gh/pwm/uuid-v4/branch/master/graph/badge.svg)](https://codecov.io/gh/pwm/uuid-v4)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5a1d7cae125323260e96/maintainability)](https://codeclimate.com/github/pwm/uuid-v4/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/5a1d7cae125323260e96/test_coverage)](https://codeclimate.com/github/pwm/uuid-v4/test_coverage)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Implementation of the [RFC 4122](https://tools.ietf.org/html/rfc4122) UUID version 4 (variant 1) data type. UUID stands for Universally Unique Identifier.
