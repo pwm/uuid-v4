@@ -32,13 +32,13 @@ class UuidV4
         $this->value = $value;
     }
 
-    public static function createFrom(string $seed): self
+    public static function createFrom(string $seed)
     {
         if (strlen($seed) !== 16) {
             throw new InvalidUuidV4Seed('Seed must be exactly 16 bytes.');
         }
 
-        return new self(vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex(self::setFixedBits($seed)), 4)));
+        return new static(vsprintf('%s%s-%s-%s-%s-%s%s%s', str_split(bin2hex(self::setFixedBits($seed)), 4)));
     }
 
     public function __toString(): string
